@@ -1,0 +1,25 @@
+.galaxy {
+	padding-top: 10px;
+	width: 15%;
+	height: 160px;
+	float: left;
+	border: 1px solid #c2c8d1;
+	display: inline-block;
+	text-align: center;
+}
+
+.ten {
+	color: blue;
+}
+
+.gia {
+	color: #5fc71a;
+}
+
+div:hover {
+	border:1px solid red;
+}
+
+p:hover {
+	color: red;
+}
