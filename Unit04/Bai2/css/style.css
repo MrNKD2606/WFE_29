@@ -52,23 +52,19 @@
 #submenu:hover {
 	background-color: #78b43d !important;
 }
-/* #submenu_2:hover{
+#submenu_2:hover{
 	background-color: #78b43d !important;
 	float: left;
-} */
+} 
 
 #submenu li:hover a #submenu_2{
 	color: white !important;
-	
 }
 
 
 #submenu li:hover a{
 	float: left;
 }
-
-
-
 
 /* #menu>ul>li>ul>li:hover #submenu_2{
 	display: block;

@@ -1,0 +1,164 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#header>ul>li{
+	float: left;
+	list-style: none;
+	padding: 0 10px;
+	border-left: 1px solid #cccccc;
+	line-height: 40px;
+}
+
+#header>ul>li>a{
+	text-decoration: none;
+
+}
+#header{
+	width: 80%;
+	height: 40px;
+	margin: 0 auto;
+}
+#banner{
+	width: 80%;
+	height: 80px;
+	margin: 0 auto;
+}
+#banner>ul>li{
+	float: left;
+	list-style: none;
+	padding: 0 3px;
+}
+#banner>ul>li>a{
+	text-decoration: none;
+	color: white;
+	border-left: 1px solid #fcf7f7;
+	padding-left: 5px;
+}
+#banner>ul>li>a:hover{
+	border-bottom: 3px solid white;
+	padding-bottom: 13px;
+}
+#tin1_1{
+	width: 20%;
+	float: left;
+	
+}
+#tin1_1>ul>li{
+	list-style: none;
+	float: left;
+	border-right: 1px solid #fcf7f7;
+	padding: 0 10px;
+}
+#tin1_2{
+	width: 38%;
+	float: left;
+	margin: 0 1%;
+}
+#tin1_2>ul>li>a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+#tin1_2>ul>li{
+	list-style: none;
+	float: left;
+	width: 50%;
+}
+#tin2_1{
+	width: 19%;
+	margin-left: 1%;
+	float: left;
+}
+#tin2_1>a, #tin2_2>a, #tin2_3>a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+#tin2_1>ul>li, #tin2_2>ul>li, #tin2_3>ul>li{
+	list-style: none;
+	float: left;
+	padding: 0 10px;
+	border-right: 1px solid #fcf7f7;
+}
+#tin2_2{
+	float: left;
+	width: 19%;
+	height: 250px;
+}
+#tin2_3{
+	float: left;
+	width: 19%;
+	margin-left: 1%;
+}
+#tin3_1{
+	width: 19%;
+	float: left;
+	margin-left: 1%;
+}
+#tin3_1>a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+#tin4{
+	height: 500px;
+}
+
+#tin4_1{
+	width: 39%;
+	float: left;
+	margin-right: 1%;
+}
+#tin4_1>a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 25px;
+}
+#tin4_2{
+	float: left;
+	width: 19%;
+	height: 200px;
+	background: #e3e3de;
+}
+#tin4_2_1{
+	background: #bb1818;
+	color: white;
+	margin-bottom: 10px;
+}
+#tin4_2>a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+#tin4_3{
+	width: 19%;
+	float: left;
+	margin-left: 1%;
+}
+#tin4_3>a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;	
+}
+#tin_5>ul>li{
+	list-style: none;
+	float: left;
+	width: 19%;
+	margin-left: 1%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#tin_5>ul>li>a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+#tin_6_1>ul>li, #tin_6_2>ul>li{
+	list-style: none;
+	width: 50%;
+	float: left;
+	font-weight: bold;
+	color: black;
+}
