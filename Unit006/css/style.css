@@ -1,0 +1,71 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+header>ul>li{
+	list-style: none;
+	float: left;
+	padding: 0 20px 0 20px;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	margin-top: 20px;
+}
+header>ul>li>a{
+	text-decoration: none;
+	color: black;
+}
+header{
+	width: 80%;
+	margin: 0 auto;
+	height: 60px;
+	text-align: center;
+}
+
+section{
+	margin: 0 auto;
+	width: 80%;
+	height: 600px;
+	background: #f2f4f6;
+}
+section>p{
+	font-weight: bold;
+	font-size: 40px;
+	color: #43b2a2;
+	padding: 0 60px 0 60px;
+	text-align: center;
+}
+article{
+	float: left;
+	width: 30%;
+	margin-left: 2%;
+}
+article>img{
+	width: 100%;
+	transition: width 2s, height 2s;
+}
+
+#tin_nho>img:hover  {
+	/* transition: giá trị;
+	    -moz-transition: giá trị;
+	    -webkit-transition: giá trị;
+	    -o-transition: giá trị;
+	 */
+	transform: scale(1.1, 1.1);	
+	display: inline-block;
+	animation-name: NKD;
+	animation-duration: 10s;
+
+}
+@keyframes NKD{
+	0%{top: 50px; transition:  }
+	50%{top:0px; }
+	100%{top: 50px; }
+}
+#transition{
+	width: 100%;
+	display: none;
+}
+
+article:hover{
+	
+}
