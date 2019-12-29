@@ -1,0 +1,72 @@
+@media screen and (max-width: 320px){
+	header{
+		height: 50px;
+	}
+	.mau_trang, .mau_xanh{
+		
+	}
+	header{
+		position: static;
+	}
+	header>p{
+		color: #005eff; 
+		font-weight: bold; 
+		font-size: 20px; 
+		margin-top: 10px; 
+		margin-left: 10px; 
+		float: left;
+	}
+	header>ul>li{
+		display: none;
+	}
+
+	#banner>h1{
+		font-size: 20px;
+	}
+	#banner>p{
+		font-size: 15px;
+	}
+	.mau_xanh>h1, .mau_xanh>b, .mau_trang>h1, .mau_trang>b{
+		display: none;
+	}
+	.tin1, .tin2{
+		width: 100%;
+	}
+	
+	.bieu_do{
+		width: 100%;
+	}
+	.bieu_do_nho{
+		width: 100%;
+	}
+	.bieu_do2{
+		width: 100%;
+	}
+	.bieu_do_nho2{
+		width: 100%;
+	}
+	.bieu_do3{
+		width: 100%;
+	}
+	.bieu_do_nho_3, .bieu_do_nho_4{
+		width: 100%;
+	}
+	.menu_nho{
+		width: 100%;
+	}
+	.tin3{
+		width: 100%;
+	}
+	.tin3_1{
+		width: 100%;
+	}
+	.tin4{
+		width: 100%;
+	}
+	.tin4_1{
+		width: 100%;
+	}
+	#anh4>img{
+		width: 100%;
+	}
+}
