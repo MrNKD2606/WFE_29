@@ -1,0 +1,130 @@
+@media screen and (min-width: 321px) and (max-width: 768px){
+	header p{
+		width: 100%;
+		margin-top: 15px;
+		text-align: center;
+	}
+	header nav{
+		float: left;
+		width: 100%;
+	}
+	header nav ul {
+		width: 100%;
+		margin-top: 20px;
+		text-align: center;
+	}
+	.mau_trang{
+
+	}
+	.tin{
+
+	}
+	.tin1{
+		width: 100%;
+		text-align: center;
+	}
+	.tin1 h2{
+		
+	}
+	.tin1 h6{
+
+	}
+	.anh{
+		width: 100%;
+	}
+	.anh img{
+		margin-top: 20px;
+	}
+	.tin1 div{
+		margin: 0 auto;
+	}
+	.tieu_de{
+		width: 50%;
+		left: 30%;
+	}
+	.bieu_do_nho{
+		width: 100%;
+		margin-left: 0;
+	}
+	.bieu_do_nho2{
+		width: 100%;
+		margin-left: 0;
+		margin-top: 20px;
+		background: rgba(136, 179, 247, 0.1);
+	}
+	.bieu_do_nho3{
+		width: 50%;
+		margin-left: 0;
+	}
+	.bieu_do_nho3 p{
+
+	}
+	.menu{
+
+	}
+	.menu ul{
+
+	}
+	.col2{
+		width: 100%;
+		position: relative;
+		
+	
+	}
+	.col2_anh{
+		float: initial;
+	}
+	.col2_tin{
+		width: 100%;
+	
+	}
+	.col2_tin i{
+		width: 100%;
+		position: absolute;
+		top: -25px;
+		left: 0;
+	}
+	.col2_tin p{
+		width: 100%;
+	}
+	.col3 {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 30px;
+	}
+	#menu1 ul{
+		margin-left: 30%;
+	}
+	.bieu_do3{
+		width: 100%;
+		margin-left: 0;
+	}
+	.bieu_do3 p{
+		width: 40%;
+		margin: 0 auto;
+	}
+	#name{
+		width: 100%;
+	}
+	#email{
+		margin-top: 25px;
+		width: 100%;
+	}
+	#textarena{
+		width: 100%;
+	}
+	form div{
+		width: 35%;
+	}
+	.icon_ft{
+		font-size: 15px;
+		width: 30px;
+		height: 30px;
+	}
+	.iconft{
+		margin-top: 7px;
+	}
+	footer p{
+		font-size: 15px;
+	}
+}

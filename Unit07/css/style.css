@@ -2,96 +2,170 @@
 	margin: 0;
 	padding: 0;
 }
+body{
+	font-family: sans-serif;
+	
+}
+
 header{
-	position: absolute; 
-	top: 0; 
-	width: 100%;
+	position: absolute;
+	width: 80%;
+	left: 10%;
+	z-index: 2;
 }
-header>p{
-	color: #005eff; 
-	font-weight: bold; 
-	font-size: 30px; 
-	margin-top: 30px; 
-	margin-left: 40px; 
-	float: left;
-}
-header>ul>li{
-	list-style: none;
-	float: left;
-	padding: 0 10px;
+header p{
+	color: blue;
 	font-weight: bold;
-	margin-top: 40px;
+	font-size: 30px;
+	margin-top: 30px;
+	float: left;
 
 }
+#bar{
+	display: none;
+}
+header nav{
+	
+}
+header nav ul{
+	text-align: right;
+	margin-top: 40px;
+}
+header nav ul li{
+	display: inline-block;
+	margin-left: 2%; 
+}
+header nav ul li a{
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+
+}
+header nav ul li a:hover{
+	color: red;
+}
+
 #banner{
 	width: 100%;
-	height: 700px;
-	background-size: 100% 100%;
+	height: 650px;
 	position: relative;
+	z-index: 0;
+	/* background-size: 100% 100%; */
+
 }
-#banner>h1{
+#banner img{
+	width: 100%;
+	height: 100%;
+	opacity: 0.2;
+}
+#banner h1{
 	position: absolute;
-	top: 50%;
 	left: 10%;
 	font-size: 60px;
-}
-#banner>p{
-	position: absolute;
-	top: 60%;
-	left: 10%;
-	font-size: 30px;
-}
+	top: 250px;
 
+}
+#banner p{
+	position: absolute;
+	left: 10%;
+	top: 330px;
+	font-size: 25px;
+}
+.trang{
+	width: 100%; 
+	height: 50px; 
+	background: white;
+	float: left;
+}
 .mau_trang{
 	width: 100%;
-	height: 500px;
+	height: auto;
 	background: white;
-	position: relative;
+}
+.tin{
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
 }
 .tin1{
-	width: 50%;
+	width: 60%;
 	float: left;
-	margin-left: 9%;
-	margin-top: 5%;
 }
-.tin2{
-	width: 30%;
+.anh{
+	width: 40%;
 	float: left;
-	margin-left: 2%;
-	margin-top: 5%;
+}
+.anh img{
+	width: 100%;
+}
+.tin1 h2{
+	font-size: 50px;
+	margin-top: 30px;
+}
+.tin1 h6{
+	font-size: 15px;
+}
+.tin1 div{
+	width: 30%;
+	height: 50px;
+	background-color: blue;
+	text-align: center;
+	border-radius: 30px;
+	
+}
+.tin1 div a{
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	margin-top: 14px;
+}
+.tin1 div i{
+	margin-top: 14px;
+}
+.xanh{
+	width: 100%; 
+	height: 50px; 
+	float: left;
 }
 .mau_xanh{
 	width: 100%;
-	height: 400px;
+	height: auto;
+	display: inline-block;	
 	background-color: rgba(136, 179, 247, 0.1);
-	box-shadow: 0px 1px 20px #b3cbf2;
-	position: relative;
+	text-align: center;
 }
-.mau_xanh>h1, .mau_trang>h1{
+.tieu_de{
+	float: left;
+	width: 35%;
+	height: 80px;
+	position: relative;
+	left: 40%;
+}
+.tieu_de h1{
 	font-size: 80px;
 	color: rgba(136, 179, 247, 0.3);
-	position: absolute;
-	left: 45%;
-	top: 10%;
+
 }
-.mau_xanh>b, .mau_trang>b{
+.tieu_de b{
 	color: blue;
 	font-size: 26px;
 	position: absolute;
-	left: 46%;
-	top: 19%;
-	font-weight: bold;
+	top: 45%;
+	left: 23%;
 }
+
 .bieu_do{
-	width: 82%;
-	margin: 0 auto;
-	padding-top: 140px;
+	width: 80%;
+	float: left;
+	margin-left: 10%;
+	margin-top: 20px;
 }
 .bieu_do_nho{
-	width: 32%;
+	width: 30%;
+	height: 60px;
 	position: relative;
 	float: left;
-	margin-left: 2%;
+	margin-left: 5%;
 }
 .ty_le1{
 	width: 100%;
@@ -99,128 +173,287 @@ header>ul>li{
 	background-color: rgba(188, 196, 209, 0.6);
 	position: absolute;
 	top: 30px;
-	border-radius: 12%;
+	border-radius: 10px;
 }
 .ty_le2{
 	height: 10px;
 	background-color: blue;
 	position: absolute;
 	top: 30px;
-	border-radius: 12%;
+	border-radius: 10px;
 }
-.bieu_do2{
-	width: 82%;
-	background-color: white;
-	margin: 0 auto;
-	padding-top: 140px;
-}
+
 .bieu_do_nho2{
-	width: 32%;
-	margin-left: 2%;
-	text-align: center;
-	background: rgba(186, 195, 209, 0.2);
+	width: 30%;
 	float: left;
-	box-shadow: 0 0 10px gray;
+	margin-left: 5%;
+	background: rgba(136, 179, 247, 0.1);
 }
-.bieu_do3{
-	width: 82%;
-	padding-top: 100px;
+.icon{
+	width: 60px;
+	height: 60px;
+	background: blue;
+	color: white;
+	border-radius: 50%;
 	margin: 0 auto;
+	font-size: 50px;
 }
-.bieu_do_nho3, .bieu_do_nho4{
-	width: 23%;
-	border: 1px dotted blue;
-	text-align: center;
+.bieu_do_nho3, .bieu_do3{
+	width: 23.5%;
 	float: left;
 	margin-left: 2%;
 }
-.menu_nho{
-	width: 39%;	
-	padding-top: 150px;
-	margin: 0 auto;
+.bieu_do_nho3 p, .bieu_do3 i{
+	color: blue;
+	font-size: 30px;
+	font-weight: bold;
 }
-.menu_nho>ul>li{
-	list-style: none;
+.bieu_do_nho3 p, .bieu_do3 p{
+	color: black;
+	width: 100%;
+	font-size: 20px;
+	padding: 5px 0px;
+}
+.bieu_do_nho3 i{
+	color: blue;
+	font-weight: bold;
+	font-size: 30px;
+}
+.menu{
 	float: left;
-	margin: 10px;
+	width: 80%;
+	text-align: center;
+	margin-left: 10%;
+	margin-top: 20px;
 }
-.menu_nho>ul>li>a{
+.menu ul{
+
+}
+.menu ul li{
+	display: inline-block;
+	margin: 0 5px;
+}
+.menu ul li a{
 	text-decoration: none;
+}
+.menu ul li a div{
+	border-radius: 20px;
+	border: 1px solid blue;
 	color: blue;
 }
-
-.menu_nho>ul>li>a>div{
-	background-color: white;
-	border-radius: 50%;
-	border: 1px solid blue;
+.menu ul li a div p{
+	padding: 12px;
 }
-.menu_nho>ul>li>a>div>p{
-	padding: 10px;
-}
-
-.menu_nho>ul>li>a>div:hover{
+.menu ul li a div:hover{
 	background: blue;
 	color: white;
 }
-#anh4{
+.anh4{
+	float: left;
 	width: 100%;
-	margin: 0 auto;
+	margin-top: 20px;
 }
-#anh4>img{
-	float: left;
-	width: 50%;
-	height: 270px;
-}
-.tin3{
-	width: 82%;
-	margin: 0 auto;
-	padding-top: 150px;
-}
-.tin3_1{
+.anh4 img{
 	width: 50%;
 	float: left;
-
 }
-#chu>ul>li{
-	list-style: none;
+.col2{
+	width: 50%;
+	margin: 20px 0;
 	float: left;
-	font-size: 25px;
-	border-left: 1px solid gray;
-	margin-right: 10px;
-	padding-left: 7px;
 }
-.tin4{
-	width: 82%;
-	margin: 0 auto;
-	padding-top: 140px;
-	
-}
-.tin4_1{
-	width: 32%;
+.col2_anh{
+	width: 30%;
+	height: 160px;
+	float: left;
 	position: relative;
-	float: left;
-	margin-left: 2%; 
 }
-.tin4_1>img{
-	width: 100%;
-	
-} 
-.tin4_1>ul>li{
-	list-style: none;
+#div1{
+	width: 60px;
+	height: 60px;
+	border-top: 5px solid blue;
+	border-right: 5px solid blue;
+	position: absolute;
+	right: 0;
+	z-index: 0;
+}
+#div2{
+	width: 80%;
+	height: 129.5px;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	z-index: 1;
+}
+#div3{
+	width: 60px;
+	height: 60px;
+	border-bottom: 5px solid blue;
+	border-left: 5px solid blue;
+	position: absolute;
+	bottom: 0px;
+	z-index: 0;
+}
+.col2_tin{
 	float: left;
+	width: 60%;
+	text-align: left;
+}
+.col2_tin i{
+	color: gray;
+	font-size: 25px;
+}
+.col2_tin ul li{
+	display: inline-block;
+	padding: 0 10px;
+	border-left: 1px solid gray;
+}
+.col2_tin p{
+	margin-left: 10px;
+}
+
+.col3{
+	width: 30%;
+	float: left;
+	margin-left: 5%;
+}
+.col3 img{
+	width: 100%;
+}
+.col3 h2{
+	margin-left: 30px; 
+	margin-top: 20px;
+}
+.col3 p{
 	margin-left: 30px;
 }
-.tin4_1>ul>li:hover{
+.col3 > div{
+	width: 100%;
+	position: relative;
+}
+.col3 > div > div{
+	width: 40px; 
+	position: absolute; 
+	bottom: -15px; 
+	left: 30px;
+}
+.col3 > div  div{
+	 text-align: center;
+}
+.col3 ul{
+	margin-left: 30px;
+	float: left;
+}
+.col3 ul li{
+	padding: 10px;
+	display: inline-block;
+}
+.col3 ul li:hover{
 	border-bottom: 3px solid blue;
 }
-#menu_nho2{
-	margin-top: 20px;
-	width: 100%;
-	height: 40px;
+#menu1{
 	float: left;
+	width: 100%;
+	height: 50px;
 	background: blue;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	margin-top: 10px;
 }
-.bieu_do_nho4{
-	border: 0;
-	margin-left: 2%;
+#menu1 ul{
+
+}
+#menu1 ul li{
+	color: white;
+}
+#menu1 ul li i{
+	padding-top: 5px;
+	margin-right: 10px;
+}
+#icon2{
+	color: blue; 
+	font-size: 40px; 
+	margin-top: 20px;
+}
+#icon2_1{
+	font-size: 25px;
+}
+#icon2_2{
+	font-size: 20px; 
+	margin-bottom: 20px;
+}
+.form{
+	width: 100%;
+}
+.form h2{
+	text-align: center; 
+	color: blue; 
+	font-weight: bold; 
+	font-size: 40px; 
+}
+.form h3{
+	text-align: center;
+}
+.form1{
+	width: 80%;
+	margin-top: 30px;
+	margin-left: 10%;
+}
+.form1 form{
+
+}
+#name{
+	font-size: 30px;
+	width: 49%;
+}
+#email{
+	width: 49%;
+	font-size: 30px;
+}
+#textarena{
+	margin-top: 25px;
+	width: 99%;
+}
+form div{
+	border-radius: 50px; 
+	background-color: blue; 
+	width: 25%; 
+	height: 50px; 
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+}
+form div a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+.icon_ft{
+	width: 50px;
+	height: 50px;
+	color: white;
+	background: blue;
+	border-radius: 30px;
+	font-size: 20px;
+}
+.iconft{
+	margin-top: 15px;
+}
+footer{
+	width: 100%;
+	height: auto;
+	display: inline-block;	
+	background-color: rgba(136, 179, 247, 0.1);
+	text-align: center;
+}
+footer ul{
+	margin-top: 20px;
+}
+footer ul li{
+	display: inline-block;
+}
+footer p{
+	font-size: 25px;
+	margin-top: 10px;
 }
