@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		
+		li{
+			width: 60px;
+			height: 30px;
+			background: gray;
+			display: inline-block;
+			text-align: center;
+			padding-top: 10px;
+			color: white;
+		}
+		li:hover{
+			background: white;
+			color: black;
+		}
+		div{
+			width: 60%;
+			height: 100px;
+			position: absolute;
+
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li class="tab" onclick="goToTab1()" onmouseout="reset()">Tab 1</li>
+		<li class="tab" onclick="goToTab2()" onmouseout="reset()">Tab 2</li>
+		<li class="tab" onclick="goToTab3()" onmouseout="reset()">Tab 3</li>
+	</ul>
+	<div>
+		<h1></h1>
+		<p></p>
+	</div>
+
+	<script type="text/javascript">
+		function goToTab1() {
+			var h1 = document.getElementsByTagName('h1')[0];
+			h1.innerHTML = "Section 1";
+			var p = document.getElementsByTagName('p')[0];
+			p.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, ipsum!";
+			var div = document.getElementsByTagName('div')[0];
+			div.style.background = "red";
+		}
+
+		function goToTab2() {
+			var h1 = document.getElementsByTagName('h1')[0];
+			h1.innerHTML = "Section 2";
+			var p = document.getElementsByTagName('p')[0];
+			p.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, ipsum!";
+			var div = document.getElementsByTagName('div')[0];
+			div.style.background = "green";
+		}
+
+		function goToTab3() {
+			var h1 = document.getElementsByTagName('h1')[0];
+			h1.innerHTML = "Section 3";
+			var p = document.getElementsByTagName('p')[0];
+			p.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, ipsum!";
+			var div = document.getElementsByTagName('div')[0];
+			div.style.background = "blue";
+		}
+		function reset(){
+			var div = document.getElementsByTagName('div')[0];
+			div.style.background = "white";
+			var h1 = document.getElementsByTagName('h1')[0];
+			h1.innerHTML = "";
+			var p = document.getElementsByTagName('p')[0];
+			p.innerHTML = "";
+		}
+	</script>
+</body>
+</html>

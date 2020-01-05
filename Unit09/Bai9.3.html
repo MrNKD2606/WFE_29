@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		p{
+			font-size: 18px;
+		}
+	</style>
+</head>
+<body>
+	<button onclick="macDinh()">Mặc Định</button>
+	<button onclick="lon()">Lớn</button>
+	<button onclick="nho()">Nhỏ</button>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fuga enim dolore harum rerum dolor facilis hic quisquam qui accusantium facere reiciendis sunt delectus, ad laudantium et expedita, ipsa iste.</p>
+
+	<script type="text/javascript">
+		function macDinh() {
+			var p = document.getElementsByTagName('p')[0];
+			p.style.fontSize = "18px";
+		}
+		function lon() {
+			var p = document.getElementsByTagName('p')[0];
+			if (p.style.fontSize) {
+				var a = parseInt(p.style.fontSize.replace("px",""));
+			}else{
+				var a = 18;
+			}	
+			
+			a = a * 1.4;
+			p.style.fontSize = a+"px";
+			
+		}
+		function nho() {
+			var p = document.getElementsByTagName('p')[0];
+			if (p.style.fontSize) {
+				var a = parseInt(p.style.fontSize.replace("px",""));
+			}else{
+				var a = 18;
+			}	
+			
+			a = a * 0.6;
+			p.style.fontSize = a+"px";
+		}
+		
+	</script>
+</body>
+</html>

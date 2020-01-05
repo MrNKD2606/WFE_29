@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;	
+		}
+		form{
+			width: 50%;
+			margin: 0 auto;
+		}
+		.chon{
+			width: 7%;
+			height: 100%;
+			float: left;
+			border-right: 1px solid #9fa6b0;
+			text-align: center;
+		}
+		.chu{
+			width: 92%;
+			height: 100%;
+			float: left;
+			
+		}
+		li{
+			background: #adbddf;
+			height: 50px;
+			list-style: none;
+			border: 1px solid #9fa6b0;
+		}
+		input{
+			margin-top: 18px;
+		}
+	</style>
+</head>
+<body>
+	<form action="frm">
+		<ul>
+			<li onmouseover="changeC(this)" onmouseout="resetC(this)">
+				<div class="chon"><input name="name[]" type="checkbox"></div>
+				<div class="chu">Lorem ipsum.</div>
+			</li>
+
+			<li onmouseover="changeC(this)" onmouseout="resetC(this)">
+				<div class="chon"><input name="name[]" type="checkbox"></div>
+				<div class="chu">Lorem ipsum.</div>
+			</li>
+
+			<li onmouseover="changeC(this)" onmouseout="resetC(this)">
+				<div class="chon"><input name="name[]" type="checkbox"></div>
+				<div class="chu">Lorem ipsum.</div>
+			</li>
+
+			<li onmouseover="changeC(this)" onmouseout="resetC(this)">
+				<div class="chon"><input name="name[]" type="checkbox"></div>
+				<div class="chu">Lorem ipsum.</div>
+			</li>
+
+			<li onmouseover="changeC(this)" onmouseout="resetC(this)">
+				<div class="chon"><input name="name[]" type="checkbox"></div>
+				<div class="chu">Lorem ipsum.</div>
+			</li>
+
+			<li onmouseover="changeC(this)" onmouseout="resetC(this)">
+				<div class="chon"><input name="name[]" type="checkbox"></div>
+				<div class="chu">Lorem ipsum.</div>
+			</li>
+
+			<li onmouseover="changeC(this)" onmouseout="resetC(this)">
+				<div class="chon"><input name="name[]" type="checkbox"></div>
+				<div class="chu">Lorem ipsum.</div>
+			</li>
+
+			<li onmouseover="changeC(this)" onmouseout="resetC(this)">
+				<div class="chon"><input name="name[]" type="checkbox"></div>
+				<div class="chu">Lorem ipsum.</div>
+			</li>
+		</ul>
+		<input onclick="chonAll()" type="button" id="chon" value="Check all"/>
+        <input id="huyAll" type="button" value="Uncheck all"/> 
+	</form>
+
+	<script type="text/javascript">
+		function changeC(x) {
+			x.style.background = "#4bdc67";
+		}
+
+		function resetC(x) {
+			x.style.background = "#adbddf";
+		}
+
+		function chonAll(){
+			var list = document.getElementsByName('name[]');
+			for (var i = 0; i < list.length; i++) {
+				list[i].checked = true;
+			}
+		}
+
+		function huyAll(){
+			var list = document.getElementsByName('name[]');
+			for (var i = 0; i < list.length; i++) {
+				list[i].checked = false;
+			}
+		}
+
+		var bt2 = document.getElementById('huyAll');
+		bt2.addEventListener('click', huyAll);
+	</script>
+</body>
+</html>
