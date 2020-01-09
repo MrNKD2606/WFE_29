@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<title>Bai1</title>
+	<style>
+		div{
+			margin: 0 auto;
+			width: 450px;
+			height: 350px;
+			position: absolute;
+			top: 10px;
+			left: 30%;
+		}
+		img{
+			width: 100%;
+			height: 100%;
+		}
+		#trai, #phai{
+			width: 40px;
+			height: 40px;
+			position: absolute;
+		}
+		#trai{
+			top: 180px;
+			left: 430px;
+			z-index: 2;
+		}
+		#phai{
+			top: 180px;
+			left: 800px;
+			z-index: 2;
+		}
+		.btNho{
+			width: 15px; 
+			height: 15px;
+			position: absolute;
+			top: 400px;
+			background: gray;
+		}
+	</style>
+</head>
+<body>
+	<button id="trai"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+	<button id="phai"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+	<!-- Tin 1 -->
+	<div class="tin">
+		<img src="img/badaboosh.co.uk.png" alt="">
+		<button class="btNho"></button>
+	</div>
+	<!-- Tin 2 -->
+	<div class="tin">
+		<img src="img/badabooshforschools.co.uk.png" alt="">
+		<button class="btNho" ></button>
+	</div>
+	<!-- Tin 3 -->
+	<div class="tin">
+		<img src="img/euroloo.co.uk.png" alt="">
+		<button class="btNho" ></button>
+	</div>
+
+	<script type="text/javascript">
+		var tong = document.getElementsByClassName('tin').length;
+		var count = 0;
+		var div = document.getElementsByClassName('tin');
+
+		an();
+		div[count].firstElementChild.style.display="block";
+		hienB();
+		div[count].lastElementChild.style.background = "red";
+
+		//Lap lai sau 10s
+		setInterval(function(){
+			var phai = document.getElementById('phai');
+			an();
+			count += 1;
+			if (count>=tong) {
+				count = 0;
+			}
+			div[count].firstElementChild.style.display="block";
+			hienB();
+			rsBTn();
+			div[count].lastElementChild.style.background = "red";
+		},10000);
+
+		//Left
+		var trai = document.getElementById('trai');
+		trai.addEventListener('click', function() {
+			an();
+			count -= 1;
+			if (count<0) {
+				count=tong-1;
+			}
+			div[count].firstElementChild.style.display="block";
+			hienB();
+			rsBTn();
+			div[count].lastElementChild.style.background = "red";
+		});
+
+		//Right
+		var phai = document.getElementById('phai');
+		phai.addEventListener('click', function(){
+			an();
+			count += 1;
+			if (count>=tong) {
+				count = 0;
+			}
+			div[count].firstElementChild.style.display="block";
+			hienB();
+			rsBTn();
+			div[count].lastElementChild.style.background = "red";
+		})
+
+		//Button nho
+		var btn0 = document.getElementsByClassName('btNho')[0];
+		var btn1 = document.getElementsByClassName('btNho')[1];
+		var btn2 = document.getElementsByClassName('btNho')[2];
+		btn0.addEventListener('click',function(){
+			an();
+			btn0.previousElementSibling.style.display = "block";
+			hienB();
+			rsBTn();
+			btn0.style.background = "red";
+			count=0;
+		});
+		btn1.addEventListener('click',function(){
+			an();
+			btn1.previousElementSibling.style.display = "block";
+			hienB();
+			rsBTn();
+			btn1.style.background = "red";
+			count=1;
+		});
+		btn2.addEventListener('click',function(){
+			an();
+			btn2.previousElementSibling.style.display = "block";
+			hienB();
+			rsBTn();
+			btn2.style.background = "red";
+			count=2;
+		});
+
+		//Ham
+		function an(){
+			var div = document.getElementsByClassName('tin');
+			for (var i = 0; i < div.length; i++) {
+				div[i].firstElementChild.style.display = "none";
+			}
+		}
+		function hienB(){
+			var div = document.getElementsByClassName('tin');
+			for (var i = 0; i < div.length; i++) {
+				div[i].lastElementChild.style.display = "block";
+				var a = (i+1)*20;
+				if(i<div.length-1){
+					div[i+1].lastElementChild.style.marginLeft = a+"px";
+				}
+			}
+
+		}
+		function rsBTn(){
+			for (var i = 0; i < div.length; i++) {
+				div[i].lastElementChild.style.background = "gray";
+			}
+		}
+		function btn(){
+
+		}
+		/*function hienBt(x){
+			an();
+			x.previousElementSibling.style.display = "block";
+			hienB();
+			rsBTn();
+			x.style.background = "red";
+		}*/
+	</script>
+</body>
+</html>

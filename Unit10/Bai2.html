@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai2</title>
+</head>
+<body>
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.error{
+			color: red;
+		}
+		form{
+			border: 1px solid red;
+			border-radius: 10px;
+			width: 600px;
+		}
+		input{
+			position: absolute;
+			left: 200px;
+		}
+		span{
+			position: absolute;
+			left: 400px;
+		}
+	</style>
+</head>
+<body>
+	<form name="frm" action="#">
+		<br>
+		Họ và tên <input type="text" name="name"> <span class="error"></span> <br><br>
+		
+		Giới tính 
+		<span style="left: 200px;">Nam</span> 
+			<input type="radio" name="gt" value="Nam" style="left: 230px;">  
+		<span style="left: 260px;">Nữ</span>
+			<input type="radio" name="gt" value="Nu" style="left: 290px;"> <span class="error"></span> <br><br>
+		
+		Email <input type="text" name="email"> <span class="error"></span> <br><br>
+		
+		Số điện thoại <input type="text" name="sdt"> <span class="error"></span> <br><br>
+		
+		Mật khẩu <input type="password" name="pass1"><span class="error"></span> <br><br>
+		
+		Xác nhận mật khẩu <input type="password" name="pass2"><span class="error"></span> <br><br>
+	</form>
+	<br>
+	<button style="margin-left: 50px;">Đăng ký</button>
+	<button style="margin-left: 300px;">Xóa trắng</button>
+
+	<script type="text/javascript">
+		var button = document.getElementsByTagName('button')[0];
+		var button2 = document.getElementsByTagName('button')[1];
+		button.addEventListener('click', function (event){
+			event.preventDefault();
+			var name = document.frm.name;
+			var gt = document.frm.gt;
+			var email = document.frm.email;
+			var sdt = document.frm.sdt;
+			var pass1 = document.frm.pass1;
+			var pass2 = document.frm.pass2;
+			//Name
+			var a, b, c, d,e;
+			if (name.value=="") {
+				name.nextElementSibling.innerHTML ="Nhap ten";
+			} else if(name.value.length <= 8){
+				name.nextElementSibling.innerHTML ="Ten <= 8";
+			} else{
+				a = true;
+				name.nextElementSibling.innerHTML ="";
+			}
+			//email
+			var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+			if(email.value==""){
+				email.nextElementSibling.innerHTML="Nhap email";
+			}else if(!filter.test(email.value)){
+				email.nextElementSibling.innerHTML="Email khong hop le";
+			} else{
+				b = true;
+				email.nextElementSibling.innerHTML ="";
+			}
+			//SDT
+			if(sdt.value==""){
+				sdt.nextElementSibling.innerHTML="Nhap sdt";
+			}else {
+				c = true;
+				sdt.nextElementSibling.innerHTML ="";
+			}
+			//Mat khau
+			if(pass1.value==""){
+				pass1.nextElementSibling.innerHTML="Nhap password";
+			}else {
+				d = true;
+				pass1.nextElementSibling.innerHTML ="";
+			}
+			//Xac nhan mat khau
+			if(pass2.value==""){
+				pass2.nextElementSibling.innerHTML="Xac nhan password";
+			}else if(pass2.value!=pass1.value){
+				pass2.nextElementSibling.innerHTML="Mat khau khong giong";
+			}else {
+				e = true;
+				pass2.nextElementSibling.innerHTML ="";
+			}
+
+			if(a==true&b==true&c==true&d==true&e==true){
+				name.value="";
+				email.value="";
+				sdt.value="";
+				pass1.value="";
+				pass2.value="";
+				gt.checked=false;
+				alert("Gui thanh cong");
+			}
+		})
+
+		button2.addEventListener('click', function(event){
+			event.preventDefault();
+			var name = document.frm.name;
+			var gt = document.frm.gt;
+			var email = document.frm.email;
+			var sdt = document.frm.sdt;
+			var pass1 = document.frm.pass1;
+			var pass2 = document.frm.pass2;
+			name.value="";
+			email.value="";
+			sdt.value="";
+			pass1.value="";
+			pass2.value="";
+			gt.checked=false;
+		})
+	</script>
+</body>
+</html>
+</body>
+</html>

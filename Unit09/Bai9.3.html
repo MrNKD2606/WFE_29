@@ -24,6 +24,7 @@
 		function lon() {
 			var p = document.getElementsByTagName('p')[0];
 			if (p.style.fontSize) {
+				// replace gan gi tri 'px' = rong
 				var a = parseInt(p.style.fontSize.replace("px",""));
 			}else{
 				var a = 18;
