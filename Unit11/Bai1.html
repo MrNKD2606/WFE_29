@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai1</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/b1.js"></script>
+</head>
+<body>
+	<header>
+		<h1>jQuery Steps</h1>
+		<nav id="menu">
+			<ul>
+				<li>Getting Started</li>
+				<li>Examples</li>
+				<li>Documentation</li>
+				<li>Bootgrid</li>
+				<li>Blog</li>
+				<li>GitHub</li>
+				<li>About</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="container">
+		<nav id="menu2">
+			<ul>
+				<li>Basic Example</li>
+				<li>Basic Form Example</li>
+				<li>Advanced Form Example</li>
+				<li>Dynamic Manipulation Example</li>
+				<li>Tabs Example</li>
+				<li>Vertical Steps Example</li>
+				<li>Async Content Loading Example</li>
+				<li>Embedded Content Example</li>
+			</ul>
+		</nav>
+
+		<div id="content">
+			<h1>Advanced Form Example</h1>
+			<nav>
+				<ul>
+					<li>1. Account</li>
+					<li>2. Profile</li>
+					<li>3. Warning</li>
+					<li>4. Finish</li>
+				</ul>
+			</nav>
+
+			<div name="frm" class="form">
+				<h2>Account Information</h2>
+				<form action="">
+					User name * <br>
+					<input type="text" name="name"> <span class="error"></span> <br>
+					Password * <br>
+					<input type="password" name="pass1"> <span class="error"></span> <br>
+					Confirm Password * <br>
+					<input type="password" name="pass2"> <span class="error"></span> <br>
+					(*) Mandatory
+				</form>
+				<div id="bt">
+					<button>Previous</button>
+					<button id="neXt">Next</button>
+				</div>
+			</div>
+
+			<div class="profile">
+				<h2>Profile Information</h2>
+				<form action="">
+					First Name * <br>
+					<input type="text" name="firstName"> <span class="error"></span> <br>
+					Last Name * <br>
+					<input type="text" name="lastName"> <span class="error"></span> <br>
+					Email * <br>
+					<input type="text" name="email"> <span class="error"></span> <br>
+					Address <br>
+					<input type="text" name="address"> <span class="error"></span> <br>
+					Age (The warning step will show up if age is less than 18) * <br>
+					<input type="text" name="age"> <span class="error"></span> <br>
+					(*) Mandatory
+				</form>
+				<div id="bt">
+					<button>Previous</button>
+					<button id="neXt">Next</button>
+				</div>
+			</div>
+
+			<div class="warning">
+				<h2>You are to young</h2>
+				<br>
+				<br>
+				<h3>Please to away -)</h3>
+				<div id="bt">
+					<button>Previous</button>
+					<button id="neXt">Next</button>
+				</div>
+			</div>
+
+			<div class="finish">
+				<h2>Terms and Conditions</h2>
+				<br>
+				<br>
+				<input type="checkbox" name="checkbox">Iagree with the Terms and Conditions <br>
+				<div id="bt">
+					<button>Previous</button>
+					<button>Finish</button>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+</body>
+</html>
