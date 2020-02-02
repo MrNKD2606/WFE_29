@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/Bai2.js"></script>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.anh_N{
+			width: 15%;
+		}
+		.anh_N:hover{
+			opacity: 0.8;
+			cursor: pointer;
+		}
+		#lightBox{
+			position: fixed;
+			z-index: 2;
+			width: 100%;
+			height: 100%;
+			display: none;
+			top: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.9);
+		}
+		#anh{
+			width: 500px;
+			height: 500px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -250px 0 0 -250px;
+			animation-name: showAnh;
+			animation-duration: 1s;
+		}
+		@keyframes showAnh{
+			0%{
+				transform: scale(0);
+			}
+			100%{
+				transform: scale(1);
+			}
+		}
+		#close{
+			position: absolute;
+			top: 15px;
+			right: 35px;
+			color: #f1f1f1;
+			font-weight: bold;
+			cursor: pointer;
+			font-size: 40px;
+			font-family: tahoma;
+		}
+		#close:hover{
+			color: red;
+		}
+		#chuThich{
+			color: white;
+			font-size: 30px;
+			text-align: center;
+			margin-top: 600px;
+
+		}
+	</style>
+</head>
+<body>
+	<div style="text-align: center;">
+		<h1>Ảnh Pokemon</h1>
+		<img src="img/Bai2/anh1.jpg" class="anh_N" alt="Pikachu">
+		<img src="img/Bai2/anh2.jpg" class="anh_N" alt="Koduck">
+		<img src="img/Bai2/anh3.jpg" class="anh_N" alt="Lizardon">
+		<img src="img/Bai2/anh4.png" class="anh_N" alt="Fushigidane">
+		<img src="img/Bai2/anh5.jpg" class="anh_N" alt="Zenigame	">
+	</div>
+	
+	
+	<div id="lightBox">
+		<span id="close">X</span>
+		<img src="" alt="" id="anh">
+		<p id="chuThich"></p>
+	</div>
+</body>
+</html>
