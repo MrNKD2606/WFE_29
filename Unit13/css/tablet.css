@@ -1,0 +1,54 @@
+@media screen and (min-width: 321px) and (max-width: 768px){
+	header{
+		position: static;
+		width: 100%;
+		height: 50px;
+	}
+	header h3{
+		color: red;
+		margin-left: 10%;
+	}
+	.a{
+		display: none;
+	}
+	.b{
+		display: block;
+		float: right;
+		margin-right: 10%;
+	}
+	.dau h1{
+		font-size: 30px;
+		width: 80%;
+		margin-left: 10%;
+	}
+	.dau hr{
+		top: 200px;
+	}
+	.dau h5{
+		width: 90%;
+		margin-left: 5%;
+	}
+	.dau div{
+		width: 20%;
+	}
+	.t80{
+		width: 100%;
+	}
+	.trang_nho{
+		width: 50%;
+	}
+	.anh6 img{
+		width: 49%;
+	}
+	.trang h5, #banner h5{
+		width: 80%;
+		margin-left: 10%;
+	}
+	.t50-nho{
+		width: 100%;
+	}
+	.bt{
+		width: 20%;
+		margin-left: 40%;
+	}
+}
